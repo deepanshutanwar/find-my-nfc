@@ -8,3 +8,6 @@ A common and recurring problem is that students frequently forget their NFC card
 This situation creates high stress and inconvenience for students, disruption to roommates, safety concerns when students are locked out at night, and additional operational burden for housing staff.
 
 Despite trying personal solutions such as hanging keys near the door or keeping cards in bags, human error still leads to frequent forgetfulness. There is currently no smart, automated, or fail safe solution to prevent or resolve this issue efficiently.
+
+## Solution
+Developing a smart IoT device that detects when a person is leaving their room and sends a Telegram alert to remind them to take their NFC access card.
