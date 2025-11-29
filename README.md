@@ -1,6 +1,6 @@
 # Find My NFC
 
-##Problem Statement 
+## Problem Statement 
 At University of California, Irvine housing, residents rely on physical NFC access cards to enter residential buildings and rooms. Each student is issued a separate NFC card, and access is strictly dependent on carrying this card at all times.
 
 A common and recurring problem is that students frequently forget their NFC card inside their room. When this happens, they are forced to contact roommates to open the gate or room, visit the housing office for temporary access, or wait outside for extended periods of time. This becomes especially difficult during late nights when roommates are sleeping and housing offices are closed.
