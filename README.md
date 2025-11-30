@@ -9,5 +9,9 @@ This situation creates high stress and inconvenience for students, disruption to
 
 Despite trying personal solutions such as hanging keys near the door or keeping cards in bags, human error still leads to frequent forgetfulness. There is currently no smart, automated, or fail safe solution to prevent or resolve this issue efficiently.
 
-## Solution
+## Solution (Version 1)
 Developing a smart IoT device that detects when a person is leaving their room and sends a Telegram alert to remind them to take their NFC access card.
+
+### Flow Chart
+<img width="868" height="965" alt="image" src="https://github.com/user-attachments/assets/bb364366-2d00-4a2a-baaa-8c0e8cdafed0" />
+
