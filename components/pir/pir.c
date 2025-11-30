@@ -5,6 +5,8 @@
 
 #define PIR 4 //GPIO_4
 
+//testing
+
 void setupGPIOInputConfig(int GPIO_PIN)
 {
     //configure GPIO
