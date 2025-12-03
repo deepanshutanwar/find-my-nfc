@@ -1,6 +1,6 @@
 idf_component_register(
                     SRCS 
-                        "pir.c"
+                        "pir.cpp"
                     INCLUDE_DIRS 
                         "include"
                     REQUIRES

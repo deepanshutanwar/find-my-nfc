@@ -1,5 +1,10 @@
+#pragma once
 #include "driver/gpio.h"
 
-void setupGPIOInputConfig(int GPIO_PIN);
+class PIR{
+public:
+    void setup();
 
-void setup();
+private:
+    void setupGPIOInputConfig(int GPIO_PIN);
+};
