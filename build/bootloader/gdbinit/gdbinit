@@ -1,0 +1,2 @@
+source D:/personal/projects/find-my-nfc/build/bootloader/gdbinit/symbols
+source D:/personal/projects/find-my-nfc/build/bootloader/gdbinit/connect
