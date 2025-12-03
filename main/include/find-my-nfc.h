@@ -1,5 +1,6 @@
 #include "driver/gpio.h"
 
-void setup();
+bool isMotionDetected = false;
 
+void setup();
 void setupGPIOInputConfig(int GPIO_PIN);

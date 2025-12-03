@@ -2,8 +2,13 @@
 #include "find-my-nfc.h"
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
+#include "esp_timer.h"
 
 #define PIR_NUM GPIO_NUM_4 //GPIO_4
+#define TIME_30_MINS_US (60LL * 1000000LL)
+
+//
+long long last_toggle_time = 0;
 
 void setupGPIOInputConfig(int GPIO_PIN)
 {
@@ -23,12 +28,20 @@ void app_main(void)
 {
     //setup GPIO input config
     setupGPIOInputConfig(PIR_NUM);
+    last_toggle_time = esp_timer_get_time();
+    long long now = 0;
 
     while(1){
-        bool level = gpio_get_level(PIR_NUM);
-        if(level) printf("PIR ON\n");
-        else printf("PIR OFF\n");
+        // bool level = gpio_get_level(PIR_NUM);
+        // if(level) printf("PIR ON\n");
+        // else printf("PIR OFF\n");
+        now = esp_timer_get_time();
+        if((now-last_toggle_time)>TIME_30_MINS_US){
+            printf("TIMES UP!!!!!");
+            last_toggle_time = esp_timer_get_time();
+        }
         vTaskDelay(100/portTICK_PERIOD_MS);
     }
+
 
 }
