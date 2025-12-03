@@ -1225,8 +1225,8 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/personal/projects/find-my-nfc/build/esp-idf/main/libmain.a",
-            "sources": [ "D:/personal/projects/find-my-nfc/main/find-my-nfc.cpp" ],
-            "include_dirs": [ "." ]
+            "sources": [ "D:/personal/projects/find-my-nfc/main/find-my-nfc.c" ],
+            "include_dirs": [ "include" ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -2926,7 +2926,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "." ]
+            "include_dirs": [ "include" ]
         },
         "pir": {
             "alias": "idf::pir",

@@ -1,13 +1,11 @@
 #include <stdio.h>
+#include "find-my-nfc.h"
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
-#include "pir.h"
 
 #define PIR_NUM GPIO_NUM_4 //GPIO_4
 
-//testing
-
-void PIR::setupGPIOInputConfig(int GPIO_PIN)
+void setupGPIOInputConfig(int GPIO_PIN)
 {
     //configure GPIO
     gpio_config_t io_config={
@@ -21,9 +19,8 @@ void PIR::setupGPIOInputConfig(int GPIO_PIN)
     gpio_config(&io_config);
 }
 
-void PIR::setup()
+void app_main(void)
 {
-
     //setup GPIO input config
     setupGPIOInputConfig(PIR_NUM);
 
